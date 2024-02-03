@@ -9,6 +9,44 @@
 
 
 /*navbar starts */
+.Deep-Dropdown{
+    position: relative;
+    width: 100%;
+}
+.Deep-Dropdown ul{
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+.Deep-Dropdown ul li{
+    min-width: 200px;
+}
+.deep{
+    padding-bottom: 35px !important;
+}
+.submenu{
+    margin-top: -30px !important;
+    margin-left: 157px !important;
+    padding-top: 5px !important;
+    width:100%;
+    height:152px;
+}
+
+.submenu li .dropdown-item{
+    position:absolute;
+    width: 100%;
+    height: 23%;
+    display: inline-block;
+}
 .dot{
     color: #e03a3c;
     font-family: "Poppins", sans-serif;
@@ -84,7 +122,7 @@ color: #e03a3c;
 /*navbar ends */
 /*img starts */
 .centerimg{
-    background: rgba(0,0,0,0.7)url(./Image/confident-business-team-working-together-brainstorming-using-laptop-BMOF00219.jpg);
+    background: rgba(0,0,0,0.7)url(./Image/presento.jpeg);
     background-size: cover;
     background-blend-mode: darken;
         width: 100%;
@@ -93,6 +131,18 @@ color: #e03a3c;
         padding-top: 82px;
         margin-bottom:20px ;
     
+}
+.zoom { 
+    animation-name: zoomInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes zoomInRight {
+    from {
+        transform: scale(1.1) translateX(-10%) ;
+        opacity: 0;
+    }
 }
 .centerimg h1{
     font-size: 48px;
@@ -122,6 +172,19 @@ color: #e03a3c;
     opacity: 0.5;
    
 }
+.owl-carousel { 
+    animation-name:zoomin;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+    animation-timeline: view(650px 0px);
+}
+
+@keyframes zoomIn {
+    from {
+        transform: translateZ(0) scale(1);
+        opacity: 0;
+    }
+}
 .main-box:hover img
 {
     filter:grayscale(0)!important;
@@ -146,8 +209,8 @@ color: #e03a3c;
    .skew{
     background-color: black !important;
     color: white;
-    transform: skewY(-3deg);
-    margin-bottom: 150px;
+    transform: skewY(-3deg)!important;
+    margin-bottom: 150px!important;
     margin-top: 100px;
    }
    .skew-para{
@@ -306,7 +369,15 @@ width:300px;
     font-family: "Open Sans", sans-serif;
     padding-bottom: 10px ;
 }
+.arr i{
+    font-size: 20px;
+    padding-right: 4px;
+    color: #e03a3c;
 
+}
+.arr li{
+    list-style: none!important;
+}
 /* colums and image */
   /* secondskew */
   .headings{
@@ -335,6 +406,522 @@ width:300px;
     height: 3px;
     background: #e03a3c;
     bottom: 0;
+   }
+   .headings .paracen{
+    margin-top: 20px;
+   
+    text-align: center!important;
+   }
+   .r1{
+    display: flex;
+    flex-wrap: wrap;
+   }
+    .ll{
+        width: 50%;
+    }
+   .ii i{
+    float: left;
+    color: #e03a3c;
+    font-size: 40px;
+    
+   }
+   .ii{
+    
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    background: #252525;
+    transition: 0.3s;
+    /* position: relative; */
+   }
+   .ii p{
+    margin-left: 105px!important;
+    line-height: 24px;
+    font-size: 14px;
+   
+   }
+   .ii h4{
+    position: relative;
+    margin-left: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    
+   }
+   .ii h4::after{
+    position: absolute;
+    content:"";
+    height: 4px;
+    bottom: -5px;
+    
+    left: 35px;
+     width: 110px;
+     background-color:#fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    
+    transform: scaleX(0);
+   }
+   .ii h4:hover::after{
+    transform: scaleX(1);
+   }
+   /* PORTFOLIO */
+.imghead{
+    text-align: center!important;
+    margin-top: -20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.HEAD::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    left: 630PX;
+    background: #e03a3c;
+    bottom: -20PX;
+   }
+   .coni{
+   
+    text-align: center!important;
+   }
+   .portfolio-flters li{
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+.portfolio-flters .filter-active{
+    color: #fff;
+    background: #e03a3c;
+}
+.portfolio-flters .app:hover{
+    color: #fff;
+    background: #e03a3c;
+} 
+.big img{
+    max-width: 100%;
+    height: auto;
+}
+.bigparent .big{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+}
+   /* PORTFOLIO */
+
    
 
- }
+/*testimonial*/
+.testcar{
+    position: relative;
+  }  
+ .testmid::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #e03a3c;
+    bottom: -20px;
+   right: 620px;
+  
+   }
+   .testparacen{
+    margin-top: 50px;
+    text-align: center!important;
+   }
+.testi{
+    margin-bottom: 30px;
+    
+}
+
+.main-boxs{
+    margin-right: -10px;
+    margin: 30px 15px;
+    padding:30px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+} 
+
+.testimonial-animate{
+    margin-top: 0px !important;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.wh-card{
+    color:black;
+}
+
+.profile-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    opacity: inherit;
+    filter:grayscale(0);
+}
+
+.align{
+    text-align: justify;
+}
+
+.quotes{
+    font-size: x-large;
+    opacity: 0.5;
+    color:rgba(255, 0, 0, 0.31);
+}
+
+
+/*testimonial*/
+/* third skew */
+.sk3 .sk33 h3{
+    
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.sk3 p{
+    list-style: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+.sk3 h4{
+    font-size: 42px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px
+}
+.sk3 .sk33{
+    padding-top:  30px;
+    padding-bottom:  30px;
+   
+    background: #2b2b2b;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    
+}
+.sk3 h3{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.sk3 h4 span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.sk33 .but{
+    padding: 10px 40px 12px 40px ;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+.skk3 .ssk33 h4 span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.ssk33 h3{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.ssk33 h4{
+    
+        font-size: 42px;
+        font-weight: 500;
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 20px
+}
+.ssk33 .but{
+    padding: 10px 40px 12px 40px ;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+.sk33 .but:hover{
+    border: 3px solid white;
+}
+.ssk33 p{
+    list-style: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+.skk3 .ssk33{
+    padding-top:  30px;
+    padding-bottom:  30px;
+   
+    background:#e03a3c;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    
+}
+.ssk33 .but:hover{
+    border: 3px solid white;
+}
+.fre {
+    position: relative;
+    align-items: center!important;
+    display: flex;
+    margin-left: 400px;
+  }  
+ .fremiddle::after{
+    content: "";
+    position: absolute;
+    top:60px;
+    left: 210px;
+    width: 60px;
+    height: 3px;
+    background: #e03a3c;
+    bottom: 0;
+   }
+
+/* third skew */
+/* accordian */
+.accordion-item .accordion-body{
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+    font-size: 18px;
+}
+.accordion-item .accordion-button{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-right: 25px;
+}
+.accordion .accordion-item p{
+   display: block!important;
+    font-family: #e03a3c;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-right: 25px;
+}
+.accordion .accordion-item .accordion-button:hover{
+    color: #e03a3c;           
+    
+}
+.accordion {
+--bs-accordion-active-bg: var(--bs-white-bg-subtle); 
+--bs-accordion-btn-focus-border-color:none!important;
+    --bs-accordion-btn-focus-box-shadow: none!important;
+}
+/* accordian */
+/* team */
+.team .mm h3{
+    font-weight: 700;
+   
+    font-size: 18px;
+    color: #111111;
+}
+.team .mm p{
+    
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+.white-bg{
+    background-color: #fff;
+}
+
+.mm{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.icons{
+    display: none;
+    position: absolute;
+    top:50% !important;
+    left: 70px;
+}
+ .mm:hover .icons {
+    display: block;
+}
+.icocolor i{
+    border-radius: 50%;
+    padding:7px;
+    background-color:rgb(229, 6, 6);
+    font-size: 20px;
+}
+
+.icocolor i:hover{
+    background-color: black;
+    color:red;
+}
+/* team */
+
+/* contact */
+.con .info{
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 20px 0 20px 0;
+    border-radius: 4px;
+}
+.cont {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 30px;
+    border-radius: 4px ; 
+}
+.con .info i{
+    font-size: 32px;
+    color: #e03a3c;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #f8d4d5;
+}
+.cont .b{
+    background: #e03a3c;
+    border: 0;
+    padding: 10px 32px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px
+}
+/* contact */
+.last .la .sub{
+    margin-top: 30px;
+    background: #fff;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 4px;
+    text-align: left;
+}
+.last .la .labtn{
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #e03a3c;
+    color: #fff;
+    
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.last{
+    padding: 60px 0 30px 0;
+    background: #1b1b1b;   
+
+}
+.last  h3{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    color: #fff;
+}
+.last .la h4{
+    color: #fff;
+}
+.last .drop .lis{
+    color: #aaaaaa;
+    list-style: none;
+    padding: 0;
+    }
+    .last .drop .lis i{
+        color: white;
+    font-size: 10px;
+    line-height: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+    }
+
+    .drop{
+        position: relative;
+    }
+    .under::after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        bottom: -3px;
+        left: 3px;
+        background: #e03a3c;   
+    }
+    .la p{
+color: #fff;
+    }
+    .firstpres  p{
+        color: #fff;
+    }
+    .firstpres h4{
+        color: #fff;    
+    }
+    .firstpres span{
+        color: #e03a3c;
+    }
+    .sen .firstpres{
+        margin-left: 50px;
+    }
+    .end{
+        background: #111111;
+       
+    }
+     .social-links{
+        text-align: right!important;
+      
+    }
+     .social-links i{
+        font-size: 18px;
+    display: inline-block;
+    background: #2b2b2b;
+    color: #fff;
+    padding: 8px 0;
+    margin-top:-550px ;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+   
+    }
+    .end .larow{
+        margin-left: 100px;
+    }
+    .larow .copyright{color: #fff;}
+    .larow .credits p{color: #fff;}
+    .larow .credits span{color:#e03a3c;}
+    /* arrow */
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color:#e03a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.arrow i{
+    color: #fff;
+}
+/* arrow */
