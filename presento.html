@@ -14,6 +14,7 @@
    
    
     <link rel="stylesheet" href="presento.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript">
       //	window.addEventListener("resize", function() {
       //		"use strict"; window.location.reload(); 
@@ -73,14 +74,14 @@
 <body>
   <!-- navbar starts -->
   <section>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white  fixed-top">
       <div class="container-fluid nav">
        <a class="navbar-brand" href="presento"><span class="presento"> Presento</span> <span class="dot">.</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class=" navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class=" navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
@@ -136,7 +137,7 @@
   <div class="container-fluid">
   
     <div class="row img-end">
-      <div class="col-xl-6 col-lg-12 header zoom">
+      <div class="col-xl-6 col-lg-12 header " data-aos="fade-right" data-aos-delay="300" data-aos-offset="400" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <h1>Bettter digital experience with Presento</h1>
         <h3>We are team of talented designers making websites with Bootstrap</h3>
         <button class="btn2 btn-outline-success " type="submit">Get Started</button>
@@ -146,9 +147,9 @@
 </section>
   <!-- testimonial -->
   <section class="testimonials">
-    <div class="container zoomin">
-      <div class="owl-carousel owl-theme">
-        <div class="main-box">
+    <div class="container   " data-aos="zoom-in" data-aos-delay="200" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <div class="owl-carousel owl-theme ">
+        <div class="main-box ">
           
             <img src="./Image/client-1.png" alt="">
           
@@ -204,47 +205,52 @@
 
   <!-- Skew -->
 
-  <section id="about" >
-    <div class="skew">
-      <div class="row skew-para">
-        <div class="col-lg-4 col-para ">
-            <h3 class="mb-4">Voluptatem dignissimos provident quasi</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit </p>
-            <button class="btnabut btn-outline-success " type="submit"><SPAN>About Us</SPAN><i class="fa-solid fa-greater-than"></i></button>
-          </div>
+  <section class="skew" id="about">
+    <div class="container-fluid">
+        <div class="row skew-row">
+            <div class="col-xl-5  p-5" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
+                <h2 class="mt-5">Voluptatem dignissimos provident quasi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Duis aute irure dolor in reprehenderit</p>
+                    <button type="button" class="btn btn-about">About us<i class="fa-solid fa-angle-right"></i></button>
+            </div>
 
-        <div class="col-lg-3 icon ">
-          <div class="row icons">
-            <i class="fa-solid fa-file-invoice"></i>
-            <h4>Corporis voluptates sit</h4>
-            <p class="mb-5" >Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-          </div>
-          <div class="row icons">
-            <i class="fa-solid fa-images"></i>
-            <h4>Labore consequatur</h4>
-            <p class="mb-5">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-          </div>
-          
+            <div class="col-xl-7 p-4">
+                <div class="row " data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
+                  <div class="col-md-6">
+                    <i class="fa-solid fa-file-invoice icon"></i>
+                    <h4>Corporis voluptates sit</h4>
+                    <p class="paras">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                </div>
+
+                <div class="col-md-6">
+                  <i class="fa-solid fa-cube icon"></i>
+                    <h4>Labore consequatur</h4>
+                    <p class="paras">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+            </div>
+
+            <div class="row " data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
+              <div class="col-md-6">
+              
+                <i class="fa-solid fa-images icon"></i>
+                <h4>Ullamco laboris nisi</h4>
+                <p class="paras">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+
+            <div class="col-md-6">
+              <i class="fa-solid fa-shield icon"></i>
+                <h4>Beatae veritatis</h4>
+                <p class="paras">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+            </div>
         </div>
-        <div class="col-lg-3 icon ">
-          <div class="row icons">
-            <i class="fa-solid fa-cube"></i>
-            <h4>Ullamco laboris nisi</h4>
-            <p class="mb-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-          </div>
-          <div class="row icons">
-            <i class="fa-solid fa-shield"></i>
-            <h4>Beatae veritatis</h4>
-            <p class="mb-5">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-          </div>
-          
+
         </div>
-        
-      </div>
-      
     </div>
-  </section>
-
+    </div>
+</section>
     <!-- icons & image -->
     <!-- count starts --> 
 <section  class="cb" >
@@ -293,17 +299,17 @@
       
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 cc2 me-3 d-flex">
+            <div class="col-3 cc2 me-3 d-flex "data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
               <div class="iconc">
                 <i class="fa-solid fa-tower-cell"></i>
               </div>
               <div class="ccc ms-3">
-                <h4>Modi sit est dela pireda nest</h4>
+                <h4 >Modi sit est dela pireda nest</h4>
               </div>
           <div>
           </div>
         </div>
-        <div class="col-lg-3 cc22  me-3 d-flex">
+        <div class="col-3 cc22  me-3 d-flex"data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
           <div class="iconcc">
             <i class="fa-solid fa-users-viewfinder"></i>
           </div>
@@ -313,7 +319,7 @@
       <div>
       </div>
     </div>
-    <div class="col-lg-3 cc22  me-3 d-flex">
+    <div class="col-3 cc22  me-3 d-flex "data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
       <div class="iconcc">
         <i class="fa-regular fa-sun"></i>
       </div>
@@ -322,12 +328,12 @@
       </div>
       </div>
 
-      <div class="col-lg-3 cc22  me-3 d-flex">
+      <div class="col-3 centre  me-3 d-flex "data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="iconcc">
           <i class="fa-solid fa-store"></i>
         </div>
         <div class="cccc ms-3">
-          <h4>Modi sit est dela pireda nest</h4>
+          <h4 class="">Modi sit est dela pireda nest</h4>
         </div>
         </div>
 
@@ -340,7 +346,8 @@
       <!-- image bigbox -->
       <section>
         <div class="container mt-5 mb-5">
-          <div class="row">
+          <div class="row "data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
           <div class="col-lg-6 c1">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="fst-italic">
@@ -371,14 +378,16 @@
       <!-- second skew -->
       <section id="service">
         <div class="skew">
-          <div class="container headings">
-          <div class="heading">
+          <div class="container headings" >
+          <div class="heading " data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
             <h2 class="middle">Services</h2>
-            </div>
             <p class="paracen">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+            </div>
+           
            
             <div class="row r1">
-              <div class="col-lg-6 ll mt-3">
+              <div class="col-lg-6 ll mt-3 "data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <div class="ii">
                   <i class="fa-solid fa-briefcase"></i>
                   <h4>Lorem Ipsum</h4>
@@ -386,7 +395,8 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 ll mt-3">
+              <div class="col-lg-6 ll mt-3 "data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <div class="ii">
                   <i class="fa-solid fa-list-check"></i>
                   <h4>Dolor Sitema</h4>
@@ -395,7 +405,8 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 ll">
+              <div class="col-lg-6 ll " data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <div class="ii">
                   <i class="fa-solid fa-signal"></i>
                   <h4>Sed ut perspiciatis</h4>
@@ -403,7 +414,8 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 ll">
+              <div class="col-lg-6 ll animate" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <div class="ii">
                   <i class="fa-solid fa-binoculars"></i>
                   <h4>Nemo Enim</h4>
@@ -411,7 +423,8 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 ll mb5">
+              <div class="col-lg-6 ll mb5" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <div class="ii">
                   <i class="fa-solid fa-sun"></i>
                   <h4>Magni Dolore</h4>
@@ -419,7 +432,8 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 ll mb-5">
+              <div class="col-lg-6 ll mb-5 "data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
                 <div class="ii">
                   <i class="fa-regular fa-calendar-days"></i>
                   <h4>Eiusmod Tempor</h4>
@@ -436,87 +450,185 @@
       <!-- portfolio starts-->
       <section id="portfolio">
         <div class="container coni mb-5">
-          <div class="imghead">
-            <h2 class="HEAD">PORTFOLIO</h2>
+          <div class="imghead " data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
+            <h2 class="HEAD ">PORTFOLIO</h2>
+            <p class="paragraph ">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
           </div>
-          <p class="paragraph">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-          <div class="row">
-          <ul class="portfolio-flters">
+          
+          <div class="row animate " data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
+          <ul class="portfolio-flters" >
             <li class="filter-active">All</li>
             <li class="app">App</li>
             <li class="app">Card</li>
             <li class="app">Web</li>
           </ul>
         </div>
-        <div class="row">
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-1.jpg" alt="">
+        <div class="row pb-4" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
+          <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img class="image" src="./Image/portfolio-1.jpg" alt="" width="100%">
+            
+                <div class="pop">   
+                    <div class="d-block">
+                        <h5>Card2</h5>
+                        <p>Card</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-plus me-2"></i> 
+                      <i class="fa-solid fa-link"></i>
+                    </div>   
+                </div>
+  
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-2.jpg" alt="">
+  
+            <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-6.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                    <div class="d-block">
+                        <h5>Card2</h5>
+                        <p>Card</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-plus me-2"></i> 
+                      <i class="fa-solid fa-link"></i>
+                    </div>   
+                </div>
+  
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-3.jpg" alt="">
+  
+            <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-4.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                <div class="d-block">
+                    <h5>Card2</h5>
+                    <p>Card</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-plus me-2"></i> 
+                  <i class="fa-solid fa-link"></i>
+                </div>   
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-4.jpg" alt="">
+  
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-5.jpg" alt="">
+  
+  
+          <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-2.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                    <div class="d-block">
+                        <h5>Card2</h5>
+                        <p>Card</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-plus me-2"></i> 
+                      <i class="fa-solid fa-link"></i>
+                    </div>   
+                </div>
+  
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-6.jpg" alt="">
+  
+            <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-5.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                    <div class="d-block">
+                        <h5>Card2</h5>
+                        <p>Card</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-plus me-2"></i> 
+                      <i class="fa-solid fa-link"></i>
+                    </div>   
+                </div>
+  
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-7.jpg" alt="">
+  
+            <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-7.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                <div class="d-block">
+                    <h5>Card2</h5>
+                    <p>Card</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-plus me-2"></i> 
+                  <i class="fa-solid fa-link"></i>
+                </div>   
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-8.jpg" alt="">
+  
             </div>
-          </div>
-          <div class="col-lg-4 bigparent">
-            <div class="big">
-              <img src="./Image/portfolio-9.jpg" alt="">
+  
+          <div class="col-lg-4 col-md-6 mt-4 ani">
+            
+              <img src="./Image/portfolio-3.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                <div class="d-block">
+                    <h5>Card2</h5>
+                    <p>Card</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-plus me-2"></i> 
+                  <i class="fa-solid fa-link"></i>
+                </div>   
             </div>
+  
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-8.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                <div class="d-block">
+                    <h5>Card2</h5>
+                    <p>Card</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-plus me-2"></i> 
+                  <i class="fa-solid fa-link"></i>
+                </div>   
+            </div>
+  
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mt-4 ani">
+              <img src="./Image/portfolio-9.jpg" alt="" width="100%">
+  
+              <div class="pop m-3">   
+                <div class="d-block">
+                    <h5>Card2</h5>
+                    <p>Card</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-plus me-2"></i> 
+                  <i class="fa-solid fa-link"></i>
+                </div>   
+            </div>
+            </div>
+            
           </div>
-        </div>
         </div>
 
       </section>
 
       <!--portfolio starts  -->
       <!-- testimonial starts -->
-      <section class="testi ">
-        <div class="container ">
+      <section class="testi " id="team">
+        <div class="container " data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
           
-          <div class="testcar">
+          <div class="testcar " >
             <center>
             <h2 class="testmid">TESTIMONIAL</h2>
           </center>
-            </div>
-         
-      
           <p class="testparacen">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. 
             Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-          
-        
-      <div class="owl-carousel owl-themes owl-theme testimonial-animate mt-5">
-      <div class="container main-boxs">
+            </div>
+         <div class="owl-carousel owl-themes owl-theme  mt-5" >
+      <div class="container main-boxs" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
           <div class="profile">
             <div class="profile-img">
             <img src="./Image/testimonials-1.jpg" alt="">
@@ -533,7 +645,7 @@
         </div>
       </div>
       
-      <div class="main-boxs">
+      <div class="main-boxs"data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="profile">
           <div class="profile-img">
           <img src="./Image/testimonials-2.jpg" alt="">
@@ -551,7 +663,7 @@
       </div>
       </div>
       
-      <div class="main-boxs">
+      <div class="main-boxs" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="profile">
           <div class="profile-img">
           <img src="./Image/testimonials-3.jpg" alt="">
@@ -567,7 +679,7 @@
       </div>
       </div>
       
-      <div class="main-boxs">
+      <div class="main-boxs" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="profile">
           <div class="profile-img">
           <img src="./Image/testimonials-4.jpg" alt="">
@@ -577,13 +689,13 @@
           <p>Store Owner</p>
           </div>
         </div>
-      <div class="wh-card mt-3">
+      <div class="wh-card mt-3" >
         <p class="align"><i><i class="fa-solid fa-quote-left quotes"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duisminim tempor labore quem eram duis noster aute amet
           eram fore quis sint minim. <i class="fa-solid fa-quote-right quotes"></i></i></p>
       </div>
       </div>
       
-      <div class="main-boxs">
+      <div class="main-boxs" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="profile">
           <div class="profile-img">
           <img src="./Image/testimonials-5.jpg" alt="">
@@ -608,12 +720,13 @@
 <section>
   <div class="skew ">
     <div class="container headings ">
-      <div class="heading">
+      <div class="heading " data-aos="fade-up" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
         <h2 class="middle">PRICING</h2>
-        </div>
         <p class="paracen">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        </div>
+        
       
-        <div class="row mb-5">
+        <div class="row mb-5 "  data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="col-lg-4 col-md-6 mb-5 sk3 ">
           <div class="sk33">
             <h3>FREE</h3>
@@ -664,11 +777,13 @@
     <!-- third skew -->
     <!-- accordian -->
 <section>
-  <div class="container ">
-    <div class="fre">
+  <div class="container " data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
+    <div class="fre " >
       <h2 class="fremiddle ">FREQUENTLY ASKED QUESTIONS</h2>
       </div>
-      <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
+      <div class="accordion accordion-flush mt-4 col-animate" id="accordionFlushExample" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -750,16 +865,18 @@
     <!-- accordian -->
 
     <!-- team -->
-<section class="team py-3 " id="team">
-  <div class="skew">
-    
-      <div class="container headings ">
-        <div class="heading">
+              
+<section class="team py-3 " data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-delay="100" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-out">
+  <div class="skew">  
+      <div class="container headings " >
+        <div class="heading ">
           <h2 class="middle">Team</h2>
-          </div>
           <p class="paracen">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          </div>
+         
       
-          <div class="row">
+          <div class="row ">
             <div class="col-md-3 mm ">
       
               <div class="white-bg p-3">
@@ -853,14 +970,16 @@
     <!-- team -->
 
     <!-- contact starts -->
-<section id="contact">
+<section id="contact" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"data-aos-delay="100" data-aos-offset="100" data-aos-duration="900" data-aos-easing="ease-in-out">
   
     <div class="container headin mb-5">
       <div class="imghead">
         <h2 class="HEAD">CONTACT</h2>
+        <p class="paracenn mb-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
       </div>
-      <p class="paracenn mb-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-      <div class="row mb-5">
+      
+      <div class="row mb-5 col-animate">
         <div class="col-lg-6">
 <div class="row con">
   <div class="col-lg-11 info mb-4">
@@ -1070,6 +1189,9 @@ responsive:{
 
 });
   </script>
- 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
 </body>
 </html>
