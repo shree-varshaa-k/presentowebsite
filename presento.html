@@ -257,25 +257,25 @@
   <div class="countbox container ">
     <div class="row">
         <div class="col-lg-3 col-md-6  ">
-        <div class="count">
+        <div class="count ">
            <i class="fa-regular fa-face-smile"></i>
-              <h2>234</h2>
+              <h2 class="counter-count">234</h2>
                <p>Happy Clients</p>
           </div>
   
         </div>
         <div class="col-lg-3 col-md-6 ">
-          <div class="count">
+          <div class="count  ">
             <i class="fa-solid fa-book-journal-whills"></i>
-                <h2>521</h2>
+                <h2 class="counter-count">521</h2>
                  <p>Projects</p>
             </div>
     
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="count">
+            <div class="count ">
               <i class="fa-solid fa-headset"></i>
-                  <h2>1463</h2>
+                  <h2 class="counter-count">1463</h2>
                    <p>
                     Hours Of Support</p>
               </div>
@@ -284,7 +284,7 @@
             <div class="col-lg-3 col-md-6 ">
               <div class="count">
                 <i class="fa-solid fa-user-group"></i>
-                    <h2>15</h2>
+                    <h2 class="counter-count">15</h2>
                      <p>Hard Workers</p>
                 </div>
         
@@ -1150,6 +1150,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="./presento.js"></script>
+    <script>
+      $('.counter-count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+      
+      //chnage count up speed here
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+    </script>
     <script>
 
   $(document).ready(function(){
